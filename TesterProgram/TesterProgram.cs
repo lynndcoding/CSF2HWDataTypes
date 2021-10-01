@@ -114,6 +114,31 @@ namespace TesterProgram
             Console.WriteLine(h1);
 
 
+            Console.WriteLine("----------CREDIT CARD ACCOUNT INFORMATION----------");
+
+            CreditCardAcct a1 = new CreditCardAcct();         //CONSTRUCTOR METHOD
+            a1.AccountNo = 123;
+            //TODO Figure this out!!
+            //a1.customerInfo = Customer(phone);        <<<------NEED HELP WITH THIS ONE
+            a1.Balance = 5000;
+            a1.IsPastDue = false;
+            a1.AnnualIntRate = 5;
+
+            Console.WriteLine("Using the Constructor Method:");
+            Console.WriteLine($"\n" +
+                $"Account Number: {a1.AccountNo} " +
+                $"Customer Info: {h1} " +
+                $"Balance: {a1.Balance:c} " +
+                $"Is Payment Past Due: {a1.IsPastDue}" +
+                $"Annual Interest Rate: {a1.AnnualIntRate}"); //TODO {h1.ContactInfo.} 
+
+            //DisplayReturnPolicy static method which is called from ClassName.MethodName()
+            Console.WriteLine("CUSTOMER INFO:\n" + (h1));
+
+            //---------using the ToString()
+            Console.WriteLine("\nUsing the ToString Method:");
+            Console.WriteLine(a1);
+
         }//end Main()
     }//end class
 }//end namespace

@@ -62,5 +62,10 @@ namespace ClassesLibrary
         {
             return string.Format($"Customer ID: {CustomerId} First Name: {FirstName} Last Name: {LastName} Contact Info: {contactInfo}");
         }
+
+        //public static string CustomerInfo()
+        //{
+        //    return string.Format($"Customer ID: {Customer.CustomerId} First Name: {FirstName} Last Name: {LastName} Contact Info: {contactInfo}");
+        //}
     }//end class
-}
+}//end namespace
