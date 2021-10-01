@@ -94,6 +94,26 @@ namespace TesterProgram
             Console.WriteLine("\nUsing the ToString Method:");
             Console.WriteLine(c1);
 
+            Console.WriteLine("----------CUSTOMER INFORMATION----------");
+
+            Customer h1 = new Customer();         //CONSTRUCTOR METHOD
+            h1.FirstName = "Han";
+            h1.LastName = "Solo";
+            h1.CustomerId = "123";
+            //h1.contactInfo = ContactInfo(City); "Not really sure how this pulls";
+
+            Console.WriteLine("Using the Constructor Method:");
+            Console.WriteLine($"\n" +
+                $"First Name: {h1.FirstName} " +
+                $"Last Name: {h1.LastName} " +
+                $"Customer ID: {h1.CustomerId} " +
+                $"Contact Info:"); //TODO {h1.ContactInfo.} 
+
+            //---------using the ToString()
+            Console.WriteLine("\nUsing the ToString Method:");
+            Console.WriteLine(h1);
+
+
         }//end Main()
     }//end class
 }//end namespace

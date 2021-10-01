@@ -39,6 +39,15 @@ namespace ClassesLibrary
             set { _gpa = value; }//is used when you assign values
         }
 
+        //make a FQ ctor
+        /// <summary>
+        /// Makes a fully qualified Student object
+        /// </summary>
+        /// <param name="firstName">The First Name of the Student</param>
+        /// <param name="lastName">The Last Name of the Student</param>
+        /// <param name="id">A unique Identifier</param>
+        /// <param name="gpa">The grade point average of the Student</param>
+
         //ctor
         public Student(string firstName, string lastName, string id, float gpa)
         {

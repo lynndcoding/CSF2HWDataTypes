@@ -25,6 +25,13 @@ namespace ClassesLibrary
             set { _password = value; }//is used when you assign values
         }
 
+        //make a FQ ctor
+        /// <summary>
+        /// Makes a fully qualified Login object
+        /// </summary>
+        /// <param name="userName">A unique User Name</param>
+        /// <param name="password">A unique password</param>
+
         //ctor
         public Login(string userName, string password)
         {

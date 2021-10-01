@@ -54,7 +54,15 @@ namespace ClassesLibrary
         }
 
         //ctor
-
+        /// <summary>
+        ///Makes a fully qualified Login object
+        /// </summary>
+        /// <param name="streetAddress">Street Address</param>
+        /// <param name="city">City</param>
+        /// <param name="state">State</param>
+        /// <param name="zip">Zip</param>
+        /// <param name="phone">Phone Number</param>
+        /// <param name="email">Email</param>
         public ContactInfo(string streetAddress, string city, string state, string zip, string phone, string email)
         {
             //Property = parameter

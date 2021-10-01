@@ -39,6 +39,15 @@ namespace ClassesLibrary
             set { _weight = value; }//is used when you assign values
         }
 
+        //make a FQ ctor
+        /// <summary>
+        /// Makes a fully qualified Vehicle object
+        /// </summary>
+        /// <param name="make">The Make of the vehicle</param>
+        /// <param name="model">The Model of the vehicle</param>
+        /// <param name="year">The year of the vehicle</param>
+        /// <param name="weight">The weight of the vehicle</param>
+
         //ctor
         public Vehicle(string make, string model, int year, float weight)
         {
