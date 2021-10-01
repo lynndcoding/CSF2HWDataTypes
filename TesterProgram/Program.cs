@@ -68,6 +68,32 @@ namespace TesterProgram
             //---------using the ToString()
             Console.WriteLine("\nUsing the ToString Method:");
             Console.WriteLine(l1);
+
+            Console.WriteLine("----------CONTACT INFORMATION----------");
+
+            //public ContactInfo(string streetAddress, string city, string state, string zip, string phone, string email)
+
+            ContactInfo c1 = new ContactInfo();         //CONSTRUCTOR METHOD
+            c1.StreetAddress = "3421 NW Jefferson Street";
+            c1.City = "Blue Springs ";
+            c1.State = "MO-Missouri ";
+            c1.Zip = "12345 ";
+            c1.Phone = "123-456-7890 ";
+            c1.Email = "me@gmail.com";
+
+            Console.WriteLine("Using the Constructor Method:");
+            Console.WriteLine($"\n" +
+                $"Street Address: {c1.StreetAddress} " +
+                $"City: {c1.City} " +
+                $"State: {c1.State} " +
+                $"Zip: {c1.Zip} " +
+                $"Phone: {c1.Phone} " +
+                $"Email: {c1.Email} ");
+
+            //---------using the ToString()
+            Console.WriteLine("\nUsing the ToString Method:");
+            Console.WriteLine(c1);
+
         }//end Main()
     }//end class
 }//end namespace
