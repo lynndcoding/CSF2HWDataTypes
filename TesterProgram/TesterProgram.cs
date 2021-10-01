@@ -7,23 +7,23 @@ using ClassesLibrary;
 
 namespace TesterProgram
 {
-    class Program
+    class TesterProgram
     {
         static void Main(string[] args)
         {
             //public Student(string firstName, string lastName, string id, float gpa)
             Console.WriteLine("----------STUDENT INFORMATION----------");
-            Student s1 = new Student();         //CONSTRUCTOR METHOD
+            ClassesLibrary.Student s1 = new ClassesLibrary.Student();         //CONSTRUCTOR METHOD
             s1.FirstName = "Harry";
             s1.LastName = "Potter";
             s1.Id = "001";
             s1.Gpa = 3;
-            Student s2 = new Student();         //CONSTRUCTOR METHOD
+            ClassesLibrary.Student s2 = new ClassesLibrary.Student();         //CONSTRUCTOR METHOD
             s2.FirstName = "Hermione";
             s2.LastName = "Grainger";
             s2.Id = "002";
             s2.Gpa = 4;
-            Student s3 = new Student();         //CONSTRUCTOR METHOD
+            ClassesLibrary.Student s3 = new ClassesLibrary.Student();         //CONSTRUCTOR METHOD
             s3.FirstName = "Ronald";
             s3.LastName = "Weasley";
             s3.Id = "003";
