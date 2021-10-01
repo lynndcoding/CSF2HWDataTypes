@@ -139,6 +139,24 @@ namespace TesterProgram
             Console.WriteLine("\nUsing the ToString Method:");
             Console.WriteLine(a1);
 
+            Console.WriteLine("----------BOOK INFORMATION----------");
+
+            Book b1 = new Book();         //CONSTRUCTOR METHOD
+            b1.Author = "Charles Dickens";
+            b1.Title = "Bleak House";
+            b1.NumberPages = 3458;
+
+            Console.WriteLine("Using the Constructor Method:");
+            Console.WriteLine($"\n" +
+                $"Author: {b1.Author} " +
+                $"Title: {b1.Title} " +
+                $"Number of Pages: {b1.NumberPages} "); 
+
+            //---------using the ToString()
+            Console.WriteLine("\nUsing the ToString Method:");
+            Console.WriteLine(b1);
+
+
         }//end Main()
     }//end class
 }//end namespace
