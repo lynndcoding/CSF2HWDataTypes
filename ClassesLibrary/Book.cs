@@ -41,7 +41,5 @@ namespace ClassesLibrary
         {
             return string.Format($"Title: {Title} Author: {Author} No. of pages: {NumberPages} ");
         }
-
-
-    }
-}
+    }//end class
+}//end namespace

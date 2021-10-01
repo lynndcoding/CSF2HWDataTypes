@@ -156,6 +156,29 @@ namespace TesterProgram
             Console.WriteLine("\nUsing the ToString Method:");
             Console.WriteLine(b1);
 
+            Console.WriteLine("----------LIBRARY INFORMATION----------");
+
+            Library r1 = new Library();
+            //r1.Books = string b1.Title);      //CONSTRUCTOR METHOD
+            r1.LibraryName = "University Library";
+            r1.StreetAddress = "123 Street";
+            r1.City = "Any City";
+            r1.State = "Any State";
+            r1.Zip = "12345";
+
+            Console.WriteLine("Using the Constructor Method:");
+            Console.WriteLine($"\n" +
+                $"Books: {b1.Title} " +
+                $"Library Name: {r1.LibraryName} " +
+                $"Street Address: {r1.StreetAddress} " +
+                $"City: {r1.City} " +
+                $"State: {r1.State} " +
+                $"Zip: {r1.Zip} ");
+
+            //---------using the ToString()
+            Console.WriteLine("\nUsing the ToString Method:");
+            Console.WriteLine(r1);
+
 
         }//end Main()
     }//end class

@@ -12,7 +12,6 @@ namespace ClassesLibrary
         private string _customerId;
         private string _firstName;
         private string _lastName;
-        private float _gpa;
 
         //properties
         public string CustomerId
