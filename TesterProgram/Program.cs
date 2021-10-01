@@ -12,7 +12,7 @@ namespace TesterProgram
         static void Main(string[] args)
         {
             //public Student(string firstName, string lastName, string id, float gpa)
-
+            Console.WriteLine("----------STUDENT INFORMATION----------");
             Student s1 = new Student();         //CONSTRUCTOR METHOD
             s1.FirstName = "Harry";
             s1.LastName = "Potter";
@@ -39,6 +39,8 @@ namespace TesterProgram
             Console.WriteLine(s2);
             Console.WriteLine(s3);
 
+            Console.WriteLine("----------VEHICLE INFORMATION----------");
+
             //public Vehicle(string make, string model, int year, float weight)
 
             Vehicle v1 = new Vehicle();         //CONSTRUCTOR METHOD
@@ -53,6 +55,19 @@ namespace TesterProgram
             Console.WriteLine("\nUsing the ToString Method:");
             Console.WriteLine(v1);
 
+            Console.WriteLine("----------LOGIN INFORMATION----------");
+
+            //public Student(string firstName, string lastName, string id, float gpa)
+
+            Login l1 = new Login();         //CONSTRUCTOR METHOD
+            l1.UserName = "Disdude";
+            l1.Password = "123";
+            Console.WriteLine("\nUsing the Constructor Method:");
+            Console.WriteLine($"User Name: { l1.UserName} Password: {l1.Password} ");
+
+            //---------using the ToString()
+            Console.WriteLine("\nUsing the ToString Method:");
+            Console.WriteLine(l1);
         }//end Main()
     }//end class
 }//end namespace
