@@ -86,3 +86,49 @@ namespace ClassesLibrary
 
 }//end namespace
 
+
+////Method
+
+
+//public override string ToString()
+//{
+//    return string.Format($"{CustomerID}\t\t{FirstName} {LastName}\n" +
+////$"Phone: {ContactInformation.Phone}\n" +
+////$"Email: {ContactInformation.Email}" +
+//                                                                                                                             $"{ContactInformation}");
+//    return CustomerID;
+//}
+//ctor
+
+/*ADD TO CONSOLE*/
+//static void Main(string[] args)
+//{
+//    Student s1 = new Student();
+//    s1.FirstName = "Han";
+//    s1.LastName = "Solo";
+//    Console.WriteLine(s1);
+
+
+//    Vehicle v1 = new Vehicle("Chevrolet", "Bel Air", 1957, 3273);
+//    Console.WriteLine(v1);
+
+//    Login log1 = new Login();
+//    log1.Userame = "Chewbacca";
+//    log1.Password = "Millennium Falcon";
+//    Console.WriteLine(log1);
+
+//    ContactInfo c1 = new ContactInfo("P.O. Box 49344", "Los Angles", "California", "90049", "323-461-0100", "NA");
+//    Console.WriteLine(c1);
+
+//    Customer cus1 = new Customer("0001", "Harrison", "Ford", c1);
+//    Console.WriteLine(cus1);
+
+//    CreditCardAccount cc1 = new CreditCardAccount(1, cus1, 1000m, false, 7);
+//    Console.WriteLine(cc1);
+
+//    Book bk1 = new Book("Atlas Shrugged", "Ayn Rand", 1168);
+//    Console.WriteLine(bk1);
+
+
+//    List<Book> books = new List<Book>() { bk1 };
+

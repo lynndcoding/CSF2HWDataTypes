@@ -109,6 +109,9 @@ namespace TesterProgram
                 $"Customer ID: {h1.CustomerId} " +
                 $"Contact Info:"); //TODO {h1.ContactInfo.} 
 
+            ContactInfo h2 = new ContactInfo("P.O. Box 49344", "Los Angles", "California", "90049", "323-461-0100", "NA");
+            Console.WriteLine(h2);
+
             //---------using the ToString()
             Console.WriteLine("\nUsing the ToString Method:");
             Console.WriteLine(h1);
@@ -150,7 +153,7 @@ namespace TesterProgram
             Console.WriteLine($"\n" +
                 $"Author: {b1.Author} " +
                 $"Title: {b1.Title} " +
-                $"Number of Pages: {b1.NumberPages} "); 
+                $"Number of Pages: {b1.NumberPages} ");
 
             //---------using the ToString()
             Console.WriteLine("\nUsing the ToString Method:");
@@ -180,6 +183,37 @@ namespace TesterProgram
             Console.WriteLine(r1);
 
 
+            Console.WriteLine("----------SONG INFORMATION----------");
+
+
+            //public Song(string artist, string title, int lengthInSeconds)
+
+            Song sng1 = new Song();
+            //r1.Books = string b1.Title);      //CONSTRUCTOR METHOD
+            sng1.Artist = "Ed Sheeran";
+            sng1.Title = "Bad Habits";
+            sng1.LengthInSeconds = 231;
+
+            Console.WriteLine("Using the Constructor Method:");
+            Console.WriteLine($"\n" +
+                $"Artist: {sng1.Artist} " +
+                $"Title: {sng1.Title} " +
+                $"Length in Seconds: {sng1.LengthInSeconds}");
+
+            //---------using the ToString()
+            Console.WriteLine("\nUsing the ToString Method:");
+            Console.WriteLine(sng1);
+
+
         }//end Main()
     }//end class
 }//end namespace
+
+//Student s1 = new Student();
+//s1.FirstName = "Han";//            s1.LastName = "Solo";//            Console.WriteLine(s1);//            Vehicle v1 = new Vehicle("Chevrolet", "Bel Air", 1957, 3273);
+//Console.WriteLine(v1);//            Login log1 = new Login();
+//log1.Userame = "Chewbacca";//            log1.Password = "Millennium Falcon";//            Console.WriteLine(log1);//            ContactInfo c1 = new ContactInfo("P.O. Box 49344", "Los Angles", "California", "90049", "323-461-0100", "NA");
+//Console.WriteLine(c1);//            Customer cus1 = new Customer("0001", "Harrison", "Ford", c1);
+//Console.WriteLine(cus1);//            CreditCardAccount cc1 = new CreditCardAccount(1, cus1, 1000m, false, 7);
+//Console.WriteLine(cc1);//            Book bk1 = new Book("Atlas Shrugged", "Ayn Rand", 1168);
+//Console.WriteLine(bk1);//            List<Book> books = new List<Book>() { bk1 };

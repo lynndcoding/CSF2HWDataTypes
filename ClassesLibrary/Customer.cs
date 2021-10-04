@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassesLibrary
 {
-    public class Customer
+    public class Customer : ContactInfo
     {
         //fields
         private string _customerId;
@@ -31,8 +31,8 @@ namespace ClassesLibrary
             set { _lastName = value; }//is used when you assign values
         }
 
-        //TODO: Add contactInformation from DLL ContactInfo
-        public ContactInfo contactInfo { get; set; }  //not sure if this is going to work???
+        //Add contactInformation from DLL ContactInfo
+        public ContactInfo ContactInfo { get; set; }  
         //make a FQ ctor
         /// <summary>
         /// Makes a fully qualified Customer object
@@ -43,15 +43,15 @@ namespace ClassesLibrary
         /// <param name="contactInfo"></param>
 
         //ctor
-        public Customer(string customerId, string firstName, string lastName, string contactInfo)
+        public Customer(string customerId, string firstName, string lastName, 
+            ContactInfo contactInfo)
         {
             //Property = parameter
             //PascalCase = camelCase
             CustomerId = customerId;
             FirstName = firstName;
             LastName = lastName;
-            //ContactInfo.ContactInfo = contactInfo;        <<<---NEED ANOTHER EXAMPLE HOW TO DO THIS
-
+            ContactInfo = contactInfo;
         }//end of Fully Qualified Ctor
 
         //methods
@@ -59,7 +59,10 @@ namespace ClassesLibrary
 
         public override string ToString()
         {
-            return string.Format($"Customer ID: {CustomerId} First Name: {FirstName} Last Name: {LastName} Contact Info: {contactInfo}");
+            return string.Format("\nContact Info: " + ContactInfo);
+            //return string.Format($"Customer ID: {CustomerId} First Name: {FirstName} Last Name: {LastName} " +
+              //  $"\n\nContact Info: "  {(ContactInfo)};  //TODO: <<<-----NEED HELP HERE!!!!
+
         }
 
         //public static string CustomerInfo()
@@ -68,3 +71,24 @@ namespace ClassesLibrary
         //}
     }//end class
 }//end namespace
+
+/*CODE FOR DLL*/
+////Field
+////Prop
+
+//public string CustomerID { get; set; }
+//public string FirstName { get; set; }
+//public string LastName { get; set; }
+//public ContactInfo ContactInformation { get; set; }
+
+
+////Ctor
+
+
+//public Customer(string customerID, string firstName, string lastName, ContactInfo contactInformation)
+//{
+//    CustomerID = customerID;
+//    FirstName = firstName;
+//    LastName = lastName;
+//    ContactInformation = contactInformation;
+//}
